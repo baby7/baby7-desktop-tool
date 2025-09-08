@@ -1836,6 +1836,27 @@ QPushButton:pressed {
       <bool>false</bool>
      </property>
     </widget>
+    <widget class="QPushButton" name="push_button_top_refresh">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>5</y>
+       <width>51</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>⟳刷新</string>
+     </property>
+    </widget>
     <zorder>weibo_text_browser</zorder>
     <zorder>push_button_top_baidu</zorder>
     <zorder>push_button_top_tencent</zorder>
@@ -1844,6 +1865,7 @@ QPushButton:pressed {
     <zorder>push_button_top_bilibili</zorder>
     <zorder>line_top</zorder>
     <zorder>push_button_top_weibo</zorder>
+    <zorder>push_button_top_refresh</zorder>
    </widget>
   </widget>
   <widget class="QPushButton" name="push_button_copy_bottom">
@@ -2735,6 +2757,43 @@ background-color: rgba(0, 0, 0, 0);</string>
     <string>今天要把XXXX任务完成XXXXX</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="push_button_auto_start">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>890</y>
+     <width>51</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>设置
+开机
+启动</string>
+   </property>
+  </widget>
+  <zorder>push_button_auto_start</zorder>
   <zorder>push_button_reading_cheesy_love_12</zorder>
   <zorder>push_button_exit</zorder>
   <zorder>push_button_drink</zorder>

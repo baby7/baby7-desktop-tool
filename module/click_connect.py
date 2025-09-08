@@ -19,6 +19,7 @@ def click_connect(main_object):
     main_object.push_button_top_zhihu.clicked.connect(main_object.push_button_top_zhihu_click)
     main_object.push_button_top_douyin.clicked.connect(main_object.push_button_top_douyin_click)
     main_object.push_button_top_tencent.clicked.connect(main_object.push_button_top_tencent_click)
+    main_object.push_button_top_refresh.clicked.connect(main_object.push_button_top_refresh_click)
     # 待办事项按钮
     main_object.push_button_todo_todo.clicked.connect(main_object.push_button_todo_open_click)
     main_object.push_button_todo_ok.clicked.connect(main_object.push_button_todo_close_click)
@@ -42,5 +43,7 @@ def click_connect(main_object):
     main_object.push_button_restart.clicked.connect(main_object.push_button_clear_click)
     main_object.push_button_drinking_setting.clicked.connect(main_object.open_drinking_setting_view)
     main_object.push_button_drinking_history.clicked.connect(main_object.open_drinking_record_view)
+    # 开机启动
+    main_object.push_button_auto_start.clicked.connect(main_object.push_button_auto_start_click)
     # 退出
     main_object.push_button_exit.clicked.connect(main_object.quit_before)

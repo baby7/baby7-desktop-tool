@@ -29,7 +29,7 @@ from util import \
     browser_util, \
     show_image_util, \
     style_util, \
-    version_util
+    version_util, winreg_util
 
 # 界面
 from setting import SettingWindow
@@ -90,6 +90,7 @@ class MyForm(AcrylicWindow, Ui_Form):
     image_card_data = None                      # 图片卡片数据
     cache_label = None                          # 卡片缓存
     see_card = "weibo"                          # 下方卡片中当前查看的是哪个卡片
+    top_type = "weibo"                          # 热搜卡片类型
 
     # 喝水
     text_color = "#000"                         # 文字颜色
@@ -212,6 +213,14 @@ class MyForm(AcrylicWindow, Ui_Form):
         self.push_button_novel.hide()
         # 默认微博
         self.push_button_weibo_click()
+        # 开机启动判断
+        try:
+            if winreg_util.is_auto_start_enabled():
+                self.push_button_auto_start.setText("取消\n开机\n启动")
+            else:
+                self.push_button_auto_start.setText("设置\n开机\n启动")
+        except Exception as e:
+            pass
 
     '''
     **********************************待办清单点击***************************************
@@ -406,6 +415,19 @@ class MyForm(AcrylicWindow, Ui_Form):
         self.push_button_todo_ok.setStyleSheet(style_util.get_top_style("success", top_type == "success"))
         self.line_top_4.setStyleSheet(style_util.get_top_line_style(top_type))
 
+    def push_button_auto_start_click(self):
+        try:
+            if winreg_util.is_auto_start_enabled():
+                winreg_util.set_auto_start(False)
+                self.box_info("提示", "已关闭开机自启动")
+                self.push_button_auto_start.setText("设置\n开机\n启动")
+            else:
+                winreg_util.set_auto_start(True)
+                self.box_info("提示", "成功启用开机自启动")
+                self.push_button_auto_start.setText("取消\n开机\n启动")
+        except Exception as e:
+            self.box_error("错误", "{}".format(e))
+
     '''
     **********************************卡片 · 开始***************************************
     ↓                                                                                 ↓
@@ -516,6 +538,7 @@ class MyForm(AcrylicWindow, Ui_Form):
             self.weibo_text_browser.setHtml(weibo_html)
             self.info_logger.info("获取微博信息完成")
             self.see_card = "weibo"
+            self.top_type = "weibo"
             self.show_change()
             self.set_top_show("weibo", self.push_button_top_weibo)
             return True
@@ -531,26 +554,32 @@ class MyForm(AcrylicWindow, Ui_Form):
 
     def push_button_top_weibo_click(self):
         if self.push_button_weibo_click():
+            self.top_type = "weibo"
             self.set_top_show("weibo", self.push_button_top_weibo)
 
     def push_button_top_baidu_click(self):
         if self.get_base_top_info("baidu", "百度"):
+            self.top_type = "baidu"
             self.set_top_show("baidu", self.push_button_top_baidu)
 
     def push_button_top_bilibili_click(self):
         if self.get_base_top_info("bilibili", "Bilibili"):
+            self.top_type = "bilibili"
             self.set_top_show("bilibili", self.push_button_top_bilibili)
 
     def push_button_top_zhihu_click(self):
         if self.get_base_top_info("zhihu", "知乎"):
+            self.top_type = "zhihu"
             self.set_top_show("zhihu", self.push_button_top_zhihu)
 
     def push_button_top_douyin_click(self):
         if self.get_base_top_info("douyin", "抖音"):
+            self.top_type = "douyin"
             self.set_top_show("douyin", self.push_button_top_douyin)
 
     def push_button_top_tencent_click(self):
         if self.get_base_top_info("tencent", "腾讯"):
+            self.top_type = "tencent"
             self.set_top_show("tencent", self.push_button_top_tencent)
 
     def get_base_top_info(self, type_name, type_title):
@@ -579,6 +608,20 @@ class MyForm(AcrylicWindow, Ui_Form):
         self.push_button_top_douyin.setStyleSheet(style_util.get_top_style("douyin", top_type == "douyin"))
         self.push_button_top_tencent.setStyleSheet(style_util.get_top_style("tencent", top_type == "tencent"))
         self.line_top.setStyleSheet(style_util.get_top_line_style(top_type))
+
+    def push_button_top_refresh_click(self):
+        if self.top_type == "weibo":
+            self.push_button_weibo_click()
+        elif self.top_type == "baidu":
+            self.get_base_top_info("baidu", "百度")
+        elif self.top_type == "bilibili":
+            self.get_base_top_info("bilibili", "Bilibili")
+        elif self.top_type == "zhihu":
+            self.get_base_top_info("zhihu", "知乎")
+        elif self.top_type == "douyin":
+            self.get_base_top_info("douyin", "抖音")
+        elif self.top_type == "tencent":
+            self.get_base_top_info("tencent", "腾讯")
 
     '''
     ↑                                                                                ↑
