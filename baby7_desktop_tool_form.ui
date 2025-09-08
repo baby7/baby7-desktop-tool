@@ -1,0 +1,2831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2047</width>
+    <height>1154</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>思源黑体</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>11</y>
+     <width>205</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="date_label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>21</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>2023年02月04日
+癸卯兔年 农历正月十四
+水瓶座 第 5 周 立春</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>29</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255,255,255);</string>
+   </property>
+   <property name="text">
+    <string>00:00:00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_reading">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>600</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>读的</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_60s_news">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>500</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>秒读</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_weibo_info">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>450</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 0px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="text">
+    <string>热搜</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>103</y>
+     <width>421</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_image_label_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>112</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>img/weather/blue80_1_1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_image_label_2">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>172</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>img/weather/blue80_1_1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_image_label_3">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>172</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>img/weather/blue80_1_1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_image_label_4">
+   <property name="geometry">
+    <rect>
+     <x>255</x>
+     <y>172</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>img/weather/blue80_1_1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_image_label_5">
+   <property name="geometry">
+    <rect>
+     <x>357</x>
+     <y>172</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>img/weather/blue80_1_1.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_info_label_2">
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>202</y>
+     <width>85</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>23日 小到中
+雨转中到大雨</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_temp_label_2">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>235</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>1℃--17℃</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_info_label_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>202</y>
+     <width>85</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>23日 小到中
+雨转中到大雨</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_temp_label_3">
+   <property name="geometry">
+    <rect>
+     <x>129</x>
+     <y>235</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>1℃--17℃</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_info_label_4">
+   <property name="geometry">
+    <rect>
+     <x>229</x>
+     <y>202</y>
+     <width>85</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>23日 小到中
+雨转中到大雨</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_temp_label_4">
+   <property name="geometry">
+    <rect>
+     <x>228</x>
+     <y>235</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>1℃--17℃</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_info_label_5">
+   <property name="geometry">
+    <rect>
+     <x>331</x>
+     <y>202</y>
+     <width>85</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>23日 小到中
+雨转中到大雨</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_temp_label_5">
+   <property name="geometry">
+    <rect>
+     <x>329</x>
+     <y>235</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>1℃--17℃</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_info_label_1">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>115</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>小到中雨转中到大雨</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="weather_temp_label_1">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>137</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>1℃--17℃</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>163</y>
+     <width>390</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_schedule">
+   <property name="geometry">
+    <rect>
+     <x>229</x>
+     <y>275</y>
+     <width>205</width>
+     <height>154</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="daily_schedule_label">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>308</y>
+     <width>171</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>周六：双休日
+周日：调休日（工作日）
+周一：工作日
+周二：工作日
+周三：节假日</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_looking">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>550</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>看的</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_info">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>440</y>
+     <width>381</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scroll_area">
+   <property name="geometry">
+    <rect>
+     <x>1260</x>
+     <y>800</y>
+     <width>151</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid;
+border-radius: 10px;
+border: 1px groove gray;
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>149</width>
+      <height>159</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_restart">
+   <property name="geometry">
+    <rect>
+     <x>183</x>
+     <y>395</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0);color: #000;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/drinking/refresh.png</normaloff>img/drinking/refresh.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>18</width>
+     <height>18</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="label_add">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>393</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0);color: #000;</string>
+   </property>
+   <property name="text">
+    <string>＋</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="center_label_2">
+   <property name="geometry">
+    <rect>
+     <x>63</x>
+     <y>320</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>45</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="looking_area">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>780</y>
+     <width>241</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-style: solid;
+border-radius: 10px;
+border: 1px groove gray;
+color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>239</width>
+      <height>179</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="push_button_looking_fish">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>摸鱼人日历</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_looking_everyday">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>必应每日一图</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QScrollArea" name="reading_area">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>780</y>
+     <width>231</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+border-color: rgba(255, 255, 255, 1);
+background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>229</width>
+      <height>229</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="push_button_reading_life">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>生活小窍门</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_history">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>历史上的今天</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_rainbow">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>80</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>彩虹屁</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_riddle">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>脑筋急转弯</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_morning">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>早安心语</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_night">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>140</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>晚安心语</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_chicken_1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>200</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>毒鸡汤①</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_chicken_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>200</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>毒鸡汤②</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_reading_cheesy_love">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>260</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>土味情话</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_todo">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>650</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>待办</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_novel">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>700</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>小说</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_game">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>750</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>游戏</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_setting">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>800</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_schedule_2">
+   <property name="geometry">
+    <rect>
+     <x>255</x>
+     <y>29</y>
+     <width>47</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_schedule_3">
+   <property name="geometry">
+    <rect>
+     <x>307</x>
+     <y>29</y>
+     <width>47</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_schedule_4">
+   <property name="geometry">
+    <rect>
+     <x>359</x>
+     <y>29</y>
+     <width>47</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_top_2">
+   <property name="geometry">
+    <rect>
+     <x>239</x>
+     <y>52</y>
+     <width>180</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>229</x>
+     <y>11</y>
+     <width>205</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_about">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>850</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="top_area">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>10</y>
+     <width>398</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+border-color: rgba(255, 255, 255, 0);
+background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>396</width>
+      <height>579</height>
+     </rect>
+    </property>
+    <widget class="QTextBrowser" name="weibo_text_browser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>371</width>
+       <height>535</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 0px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'思源黑体'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_top_baidu">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+QPushButton:hover {
+    color: #306eff;
+}</string>
+     </property>
+     <property name="text">
+      <string>百度</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_top_tencent">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+QPushButton:hover {
+    color: #fedc1c;
+}</string>
+     </property>
+     <property name="text">
+      <string>腾讯</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_top">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>540</y>
+       <width>398</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #000;
+    border-color: #000;
+    background-color: #000;</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_top_douyin">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+QPushButton:hover {
+    color: #ff1752;
+}</string>
+     </property>
+     <property name="text">
+      <string>抖音</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_top_zhihu">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+QPushButton:hover {
+    color: #00a3ff;
+}</string>
+     </property>
+     <property name="text">
+      <string>知乎</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_top_bilibili">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+QPushButton:hover {
+    color: #F58CAB;
+}</string>
+     </property>
+     <property name="text">
+      <string>B站</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_top_weibo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>微博</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>weibo_text_browser</zorder>
+    <zorder>push_button_top_baidu</zorder>
+    <zorder>push_button_top_tencent</zorder>
+    <zorder>push_button_top_douyin</zorder>
+    <zorder>push_button_top_zhihu</zorder>
+    <zorder>push_button_top_bilibili</zorder>
+    <zorder>line_top</zorder>
+    <zorder>push_button_top_weibo</zorder>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_copy_bottom">
+   <property name="geometry">
+    <rect>
+     <x>1440</x>
+     <y>650</y>
+     <width>151</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="todo_area">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>10</y>
+     <width>376</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+border-color: rgba(255, 255, 255, 0);
+background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_10">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>374</width>
+      <height>579</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="push_button_todo_ok">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+QPushButton:hover {
+    color: #00a3ff;
+}</string>
+     </property>
+     <property name="text">
+      <string>完成</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_top_4">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>540</y>
+       <width>376</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #000;
+    border-color: #000;
+    background-color: #000;</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_todo_todo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>540</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+QPushButton:pressed {
+    border-style: solid;
+    border: 2px solid #000;
+    border-top-color: #ffffff;
+    border-bottom-color: #000;
+    border-left-color: #000;
+    border-right-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>待办</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="todo_list_widget_todo">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>376</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <property name="autoScrollMargin">
+      <number>16</number>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_todo_add">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>4</y>
+       <width>368</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    color: rgb(0, 195, 255);
+}
+QPushButton:hover {
+    background-color:rgb(234,244,252);
+	border:1px solid rgb(44,169,225);
+}</string>
+     </property>
+     <property name="text">
+      <string>＋</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_18">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>376</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: rgba(200, 200, 200, 0.3);
+    border-color: rgba(200, 200, 200, 0.3);
+    background-color: rgba(200, 200, 200, 0.3);</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="todo_list_widget_success">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>376</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <property name="autoScrollMargin">
+      <number>16</number>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_drink">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>275</y>
+     <width>205</width>
+     <height>154</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="daily_schedule_today">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>284</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>今天：工作日</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>308</y>
+     <width>180</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="weather_position_label">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>120</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>◉ 杭州</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_drinking_history">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>278</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0);color: #000;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/drinking/history.png</normaloff>img/drinking/history.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>18</width>
+     <height>18</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_drinking_setting">
+   <property name="geometry">
+    <rect>
+     <x>183</x>
+     <y>278</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(0,0,0,0);color: #000;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>img/drinking/setting.png</normaloff>img/drinking/setting.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>18</width>
+     <height>18</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_exit">
+   <property name="geometry">
+    <rect>
+     <x>382</x>
+     <y>970</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>1430</x>
+     <y>790</y>
+     <width>141</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>139</width>
+      <height>259</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>1652</x>
+     <y>126</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0px solid #FF8D16;
+border-radius: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>今天要把XXXX任务完成XXXXX</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_17">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>116</y>
+     <width>6</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    color: rgba(164, 207, 48,0.8);
+    border-color: rgba(164, 207, 48, 0.8);
+    background-color: rgba(164, 207, 48,0.8);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>1934</x>
+     <y>72</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(166, 166, 166);</string>
+   </property>
+   <property name="text">
+    <string>×</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_reading_cheesy_love_13">
+   <property name="geometry">
+    <rect>
+     <x>1628</x>
+     <y>76</y>
+     <width>18</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 9px;
+    border: 1px groove #000;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>14</width>
+     <height>14</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="Line" name="line_12">
+   <property name="geometry">
+    <rect>
+     <x>1598</x>
+     <y>110</y>
+     <width>370</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    color: rgba(200, 200, 200, 0.3);
+    border-color: rgba(200, 200, 200, 0.3);
+    background-color: rgba(200, 200, 200, 0.3);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_14">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>2</y>
+     <width>6</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    color: rgba(212, 63, 54,0.8);
+    border-color: rgba(212, 63, 54, 0.8);
+    background-color: rgba(212, 63, 54,0.8);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>1652</x>
+     <y>7</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0px solid #FF8D16;
+border-radius: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>今天要把XXXX任务完成XXXXX</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>1934</x>
+     <y>5</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(166, 166, 166);</string>
+   </property>
+   <property name="text">
+    <string>×</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_reading_cheesy_love_14">
+   <property name="geometry">
+    <rect>
+     <x>1628</x>
+     <y>128</y>
+     <width>18</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 9px;
+    border: 1px groove #000;
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>14</width>
+     <height>14</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>1934</x>
+     <y>124</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(166, 166, 166);</string>
+   </property>
+   <property name="text">
+    <string>×</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>1670</x>
+     <y>32</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0px solid #FF8D16;
+border-radius: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>2024年5月7日 00:00</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_15">
+   <property name="geometry">
+    <rect>
+     <x>1600</x>
+     <y>64</y>
+     <width>6</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    color: rgba(255, 139, 42,0.8);
+    border-color: rgba(255, 139, 42, 0.8);
+    background-color: rgba(255, 139, 42,0.8);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_button_reading_cheesy_love_12">
+   <property name="geometry">
+    <rect>
+     <x>1627</x>
+     <y>9</y>
+     <width>18</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 9px;
+    border: 0px groove #000;
+    color: rgb(255, 255, 255);
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);</string>
+   </property>
+   <property name="text">
+    <string>✓</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>14</width>
+     <height>14</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>1647</x>
+     <y>26</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文仿宋</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgba(0, 0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>🔔</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_11">
+   <property name="geometry">
+    <rect>
+     <x>1598</x>
+     <y>59</y>
+     <width>370</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    color: rgba(200, 200, 200, 0.3);
+    border-color: rgba(200, 200, 200, 0.3);
+    background-color: rgba(200, 200, 200, 0.3);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>1652</x>
+     <y>74</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0px solid #FF8D16;
+border-radius: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>今天要把XXXX任务完成XXXXX</string>
+   </property>
+  </widget>
+  <zorder>push_button_reading_cheesy_love_12</zorder>
+  <zorder>push_button_exit</zorder>
+  <zorder>push_button_drink</zorder>
+  <zorder>push_button_setting</zorder>
+  <zorder>push_button_todo</zorder>
+  <zorder>push_button_weibo_info</zorder>
+  <zorder>push_button_about</zorder>
+  <zorder>push_button_novel</zorder>
+  <zorder>push_button_game</zorder>
+  <zorder>push_button_looking</zorder>
+  <zorder>push_button_60s_news</zorder>
+  <zorder>push_button_reading</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label</zorder>
+  <zorder>push_button_schedule</zorder>
+  <zorder>label_5</zorder>
+  <zorder>date_label</zorder>
+  <zorder>weather_image_label_1</zorder>
+  <zorder>weather_image_label_2</zorder>
+  <zorder>weather_image_label_3</zorder>
+  <zorder>weather_image_label_4</zorder>
+  <zorder>weather_image_label_5</zorder>
+  <zorder>weather_info_label_2</zorder>
+  <zorder>weather_temp_label_2</zorder>
+  <zorder>weather_info_label_3</zorder>
+  <zorder>weather_temp_label_3</zorder>
+  <zorder>weather_info_label_4</zorder>
+  <zorder>weather_temp_label_4</zorder>
+  <zorder>weather_info_label_5</zorder>
+  <zorder>weather_temp_label_5</zorder>
+  <zorder>weather_info_label_1</zorder>
+  <zorder>weather_temp_label_1</zorder>
+  <zorder>daily_schedule_label</zorder>
+  <zorder>push_button_info</zorder>
+  <zorder>scroll_area</zorder>
+  <zorder>push_button_restart</zorder>
+  <zorder>label_add</zorder>
+  <zorder>center_label_2</zorder>
+  <zorder>looking_area</zorder>
+  <zorder>reading_area</zorder>
+  <zorder>push_button_schedule_2</zorder>
+  <zorder>push_button_schedule_3</zorder>
+  <zorder>push_button_schedule_4</zorder>
+  <zorder>line_top_2</zorder>
+  <zorder>time_label</zorder>
+  <zorder>top_area</zorder>
+  <zorder>push_button_copy_bottom</zorder>
+  <zorder>todo_area</zorder>
+  <zorder>line_2</zorder>
+  <zorder>daily_schedule_today</zorder>
+  <zorder>line_3</zorder>
+  <zorder>weather_position_label</zorder>
+  <zorder>push_button_drinking_history</zorder>
+  <zorder>push_button_drinking_setting</zorder>
+  <zorder>scrollArea</zorder>
+  <zorder>label_18</zorder>
+  <zorder>line_17</zorder>
+  <zorder>label_20</zorder>
+  <zorder>push_button_reading_cheesy_love_13</zorder>
+  <zorder>line_12</zorder>
+  <zorder>line_14</zorder>
+  <zorder>label_16</zorder>
+  <zorder>label_19</zorder>
+  <zorder>push_button_reading_cheesy_love_14</zorder>
+  <zorder>label_21</zorder>
+  <zorder>label_24</zorder>
+  <zorder>line_15</zorder>
+  <zorder>label_23</zorder>
+  <zorder>line_11</zorder>
+  <zorder>label_17</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>weibo_text_browser</sender>
+   <signal>anchorClicked(QUrl)</signal>
+   <receiver>Form</receiver>
+   <slot>click_textbrowser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>575</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>click_textbrowser()</slot>
+ </slots>
+</ui>

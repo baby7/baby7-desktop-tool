@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>237</width>
+    <height>191</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scroll_area">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>32</y>
+     <width>221</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>219</width>
+      <height>149</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>界面显示：</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spin_box_drinking_count">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>41</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>20</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>我要喝</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>134</x>
+       <y>20</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>杯水</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_box_view_message">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>60</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>正着计数</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>倒着计数</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="push_button_ok">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    border: 0px groove gray;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 1px groove gray;
+}</string>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+    <zorder>label_9</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>combo_box_view_message</zorder>
+    <zorder>push_button_ok</zorder>
+    <zorder>spin_box_drinking_count</zorder>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_60s_news">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>5</y>
+     <width>81</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}</string>
+   </property>
+   <property name="text">
+    <string>喝水设置</string>
+   </property>
+  </widget>
+  <zorder>push_button_60s_news</zorder>
+  <zorder>scroll_area</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>push_button_ok</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>push_button_ok_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>364</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>push_button_ok_click()</slot>
+ </slots>
+</ui>

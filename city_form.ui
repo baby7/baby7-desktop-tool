@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>232</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scroll_area">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>32</y>
+     <width>218</width>
+     <height>173</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>216</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>95</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>选择市：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_box_county">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>93</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_box_province">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>13</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>55</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>选择市：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_ok">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>140</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    border: 0px groove gray;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 1px groove gray;
+}</string>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>15</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>选择省：</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_box_city">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>53</y>
+       <width>111</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_60s_news">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>5</y>
+     <width>81</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}</string>
+   </property>
+   <property name="text">
+    <string>选择城市</string>
+   </property>
+  </widget>
+  <zorder>push_button_60s_news</zorder>
+  <zorder>scroll_area</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>combo_box_province</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>slot_province_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>231</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>combo_box_city</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>slot_city_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>push_button_ok</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>push_button_ok_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>push_button_ok_click()</slot>
+  <slot>slot_province_click()</slot>
+  <slot>slot_city_click()</slot>
+ </slots>
+</ui>

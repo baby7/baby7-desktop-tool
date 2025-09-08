@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>387</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scroll_area">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>32</y>
+     <width>371</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>369</width>
+      <height>379</height>
+     </rect>
+    </property>
+    <widget class="QTextEdit" name="text_edit_des">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>90</y>
+       <width>341</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>222</y>
+       <width>81</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #000000;
+    background-color: rgba(0, 0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>程度：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_cancel">
+     <property name="geometry">
+      <rect>
+       <x>73</x>
+       <y>344</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    border: 0px groove gray;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 1px groove gray;
+}</string>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>68</y>
+       <width>45</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #000000;
+    background-color: rgba(0, 0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>内容：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>13</y>
+       <width>45</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #000000;
+    background-color: rgba(0, 0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>标题：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="push_button_success">
+     <property name="geometry">
+      <rect>
+       <x>233</x>
+       <y>344</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    border: 0px groove gray;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+QPushButton:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: 1px groove gray;
+}</string>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_box_degree">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>244</y>
+       <width>341</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体 Normal</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>紧急</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>一般</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>莫慌</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>274</y>
+       <width>81</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #000000;
+    background-color: rgba(0, 0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>闹钟：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="line_edit_title">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>35</y>
+       <width>341</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="check_push_button">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>298</y>
+       <width>18</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+border-radius: 9px;
+border: 1px groove #000;
+color: rgb(255, 255, 255);
+border-color: rgba(0, 0, 0, 0.5);
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>14</width>
+       <height>14</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QDateTimeEdit" name="date_time_edit">
+     <property name="geometry">
+      <rect>
+       <x>43</x>
+       <y>296</y>
+       <width>311</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>思源黑体</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-style: solid;
+    border-radius: 3px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="currentSection">
+      <enum>QDateTimeEdit::YearSection</enum>
+     </property>
+     <property name="displayFormat">
+      <string>yyyy-MM-dd HH:mm</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_60s_news">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>5</y>
+     <width>101</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}</string>
+   </property>
+   <property name="text">
+    <string>新增待办事项</string>
+   </property>
+  </widget>
+  <zorder>push_button_60s_news</zorder>
+  <zorder>scroll_area</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

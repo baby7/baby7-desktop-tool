@@ -1,0 +1,14 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource>
+        <file alias="img/drinking/history.png">img/drinking/history.png</file>
+        <file alias="img/drinking/refresh.png">img/drinking/refresh.png</file>
+        <file alias="img/drinking/setting.png">img/drinking/setting.png</file>
+        <file alias="img/icon/icon.ico">img/icon/icon.ico</file>
+        <file alias="img/icon/icon.png">img/icon/icon.png</file>
+        <file alias="img/weather/black80.png">img/weather/black80.png</file>
+        <file alias="img/weather/blue80.png">img/weather/blue80.png</file>
+        <file alias="img/weather/lightBlue80.png">img/weather/lightBlue80.png</file>
+        <file alias="img/weather/white80.png">img/weather/white80.png</file>
+    </qresource>
+</RCC>

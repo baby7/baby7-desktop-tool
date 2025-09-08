@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>232</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scroll_area">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>32</y>
+     <width>218</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    border-style: solid;
+    border-radius: 10px;
+    border: 1px groove gray;
+    color: rgb(0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>216</width>
+      <height>419</height>
+     </rect>
+    </property>
+    <widget class="QTableView" name="drink_table_view">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>191</width>
+       <height>391</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_button_60s_news">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>5</y>
+     <width>81</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>思源黑体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-style: solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
+}</string>
+   </property>
+   <property name="text">
+    <string>喝水记录</string>
+   </property>
+  </widget>
+  <zorder>push_button_60s_news</zorder>
+  <zorder>scroll_area</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
