@@ -223,9 +223,6 @@ QPushButton:hover {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>img/weather/blue80_1_1.png</pixmap>
-   </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
@@ -244,9 +241,6 @@ QPushButton:hover {
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>img/weather/blue80_1_1.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -267,9 +261,6 @@ QPushButton:hover {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>img/weather/blue80_1_1.png</pixmap>
-   </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
@@ -289,9 +280,6 @@ QPushButton:hover {
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>img/weather/blue80_1_1.png</pixmap>
-   </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
@@ -310,9 +298,6 @@ QPushButton:hover {
    </property>
    <property name="text">
     <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>img/weather/blue80_1_1.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -765,8 +750,8 @@ background-color: rgb(255, 255, 255);</string>
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>img/drinking/refresh.png</normaloff>img/drinking/refresh.png</iconset>
+    <iconset resource="compiled_resources.qrc">
+     <normaloff>:/img/drinking/refresh.png</normaloff>:/img/drinking/refresh.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -2254,8 +2239,8 @@ QPushButton:hover {
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>img/drinking/history.png</normaloff>img/drinking/history.png</iconset>
+    <iconset resource="compiled_resources.qrc">
+     <normaloff>:/img/drinking/history.png</normaloff>:/img/drinking/history.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -2288,8 +2273,8 @@ QPushButton:hover {
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>img/drinking/setting.png</normaloff>img/drinking/setting.png</iconset>
+    <iconset resource="compiled_resources.qrc">
+     <normaloff>:/img/drinking/setting.png</normaloff>:/img/drinking/setting.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -2865,7 +2850,9 @@ QPushButton:hover {
   <zorder>line_11</zorder>
   <zorder>label_17</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="compiled_resources.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>weibo_text_browser</sender>

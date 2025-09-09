@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>232</width>
-    <height>213</height>
+    <width>234</width>
+    <height>248</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <x>7</x>
      <y>32</y>
      <width>218</width>
-     <height>173</height>
+     <height>201</height>
     </rect>
    </property>
    <property name="font">
@@ -50,7 +50,7 @@
       <x>0</x>
       <y>0</y>
       <width>216</width>
-      <height>171</height>
+      <height>199</height>
      </rect>
     </property>
     <widget class="QLabel" name="label_13">
@@ -141,7 +141,7 @@
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>140</y>
+       <y>160</y>
        <width>61</width>
        <height>21</height>
       </rect>
@@ -211,6 +211,22 @@ QPushButton:hover {
     color: rgb(0, 0, 0);
     border-color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>如果选择出现问题请尝试重启软件</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>

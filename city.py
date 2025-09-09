@@ -21,7 +21,7 @@ class CityWindow(AcrylicWindow, Ui_Form):
     current_city_code = None
     current_county_code = None
 
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, use_parent=None):
         super(CityWindow, self).__init__(parent=parent)
 
         self.setupUi(self)
@@ -36,6 +36,7 @@ class CityWindow(AcrylicWindow, Ui_Form):
                 background-color: rgb(255, 255, 255);
             }
         '''
+        self.use_parent = use_parent
         # 设置标题栏
         self.setWindowTitle("七仔的桌面工具 - 天气城市设置")
         self.titleBar.minBtn.close()
@@ -51,34 +52,45 @@ class CityWindow(AcrylicWindow, Ui_Form):
 
     # 省选择器点击响应
     def slot_province_click(self, text):
-        current_province = text
-        print("选择的省为：" + current_province)
-        if current_province.startswith('--') is False:
-            for data in self.city_message['CityCode']:
-                if data['provinceName'] != current_province:
-                    continue
-                self.current_province_code = data['provinceCode']
-                self.combo_box_city.clear()
-                self.current_city_data = data['cityList']
-                for c in data['cityList']:
-                    self.combo_box_city.addItem(c['cityName'])
-        else:
+        current_province = self.combo_box_province.currentText()
+        if current_province.startswith('--') is True or current_province == "":
+            print("请选择省")
             self.combo_box_city.clear()
             self.combo_box_county.clear()
+            return
+        print("选择的省为：" + current_province)
+        for data in self.city_message['CityCode']:
+            if data['provinceName'] != current_province:
+                continue
+            print("开始填充市选择器")
+            self.current_province_code = data['provinceCode']
+            self.combo_box_city.clear()
+            self.current_city_data = data['cityList']
+            city_count = 0
+            for c in data['cityList']:
+                self.combo_box_city.addItem(c['cityName'])
+                city_count += 1
+            print(f"市选择器填充完成,数量:{city_count}")
 
     # 市选择器点击响应
     def slot_city_click(self, text):
-        current_city = text
-        print("选择的市为：" + current_city)
-        if current_city.startswith('--') is True:
+        current_city = self.combo_box_city.currentText()
+        if current_city.startswith('--') is True or current_city == "":
+            print("请选择市")
+            self.combo_box_county.clear()
             return
+        print("选择的市为：" + current_city)
         for data in self.current_city_data:
             if data['cityName'] != current_city:
                 continue
+            print("开始填充区/县选择器")
             self.current_city_code = data['cityCode']
             self.combo_box_county.clear()
+            county_count = 0
             for c in data['countyList']:
                 self.combo_box_county.addItem(c['name'])
+                county_count += 1
+            print(f"区/县选择器填充完成,数量:{county_count}")
 
     def push_button_ok_click(self):
         current_county = self.combo_box_county.currentText()
@@ -106,13 +118,15 @@ class CityWindow(AcrylicWindow, Ui_Form):
         return
 
     def box_info(self, title, message):
-        msg_box = QMessageBox()
+        msg_box = QMessageBox(self.use_parent)
         msg_box.setWindowTitle(title)
         msg_box.setText(message)
         # 设置背景色为白色，字体颜色为黑色
         msg_box.setStyleSheet(
             "QMessageBox { background-color: white; }"
             "QLabel { color: black; }"
+            "QPushButton { border-radius: 10px; border: 1px groove black; padding: 5px; }"
+            "QPushButton:hover { border: 1px groove blue; }"
         )
         # 创建自定义中文按钮
         ok_button = msg_box.addButton("确认", QMessageBox.RejectRole)
@@ -120,13 +134,15 @@ class CityWindow(AcrylicWindow, Ui_Form):
         msg_box.exec_()
 
     def box_error(self, title, message):
-        msg_box = QMessageBox()
+        msg_box = QMessageBox(self.use_parent)
         msg_box.setWindowTitle(title)
         msg_box.setText(message)
         # 设置背景色为白色，字体颜色为黑色
         msg_box.setStyleSheet(
             "QMessageBox { background-color: white; }"
             "QLabel { color: black; }"
+            "QPushButton { border-radius: 10px; border: 1px groove black; padding: 5px; }"
+            "QPushButton:hover { border: 1px groove blue; }"
         )
         # 创建自定义中文按钮
         ok_button = msg_box.addButton("确认", QMessageBox.RejectRole)

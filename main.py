@@ -58,8 +58,8 @@ from get_info import get_micro_blog_info, get_tophub_blog_info
 
 """
 生成exe的命令：
-pyinstaller -F -w -i img/icon/icon.ico -n 七仔的桌面工具V2.5.0 main.py
-pyinstaller -F -i img/icon/icon.ico -n 七仔的桌面工具V2.5.0 main.py
+pyinstaller -F -w -i img/icon/icon.ico -n 七仔的桌面工具V2.6.0 main.py
+pyinstaller -F -i img/icon/icon.ico -n 七仔的桌面工具V2.6.0 main.py
 或使用nuitka
 nuitka --mingw64 --onefile --standalone --windows-console-mode=disable --enable-plugin=pyside2 --include-package=win32com --include-package=pywintypes --windows-icon-from-ico=img/icon/icon.ico --output-dir=out --windows-uac-admin --lto=yes --jobs=14 --show-progress --show-memory main.py
 """
@@ -67,7 +67,7 @@ nuitka --mingw64 --onefile --standalone --windows-console-mode=disable --enable-
 
 class MyForm(AcrylicWindow, Ui_Form):
 
-    app_name = "七仔的桌面工具V2.5.0"              # 应用标题
+    app_name = "七仔的桌面工具V2.6.0"              # 应用标题
     tray_icon = None                            # 图标
     timer = None                                # 时间
     web_view = None                             # 浏览器
@@ -492,13 +492,15 @@ class MyForm(AcrylicWindow, Ui_Form):
     '''
 
     def box_info(self, title, message):
-        msg_box = QMessageBox()
+        msg_box = QMessageBox(self)
         msg_box.setWindowTitle(title)
         msg_box.setText(message)
         # 设置背景色为白色，字体颜色为黑色
         msg_box.setStyleSheet(
             "QMessageBox { background-color: white; }"
             "QLabel { color: black; }"
+            "QPushButton { border-radius: 10px; border: 1px groove black; padding: 5px; }"
+            "QPushButton:hover { border: 1px groove blue; }"
         )
         # 创建自定义中文按钮
         ok_button = msg_box.addButton("确认", QMessageBox.RejectRole)
@@ -506,13 +508,15 @@ class MyForm(AcrylicWindow, Ui_Form):
         msg_box.exec_()
 
     def box_error(self, title, message):
-        msg_box = QMessageBox()
+        msg_box = QMessageBox(self)
         msg_box.setWindowTitle(title)
         msg_box.setText(message)
         # 设置背景色为白色，字体颜色为黑色
         msg_box.setStyleSheet(
             "QMessageBox { background-color: white; }"
             "QLabel { color: black; }"
+            "QPushButton { border-radius: 10px; border: 1px groove black; padding: 5px; }"
+            "QPushButton:hover { bborder: 1px groove blue; }"
         )
         # 创建自定义中文按钮
         ok_button = msg_box.addButton("确认", QMessageBox.RejectRole)
@@ -919,7 +923,7 @@ class MyForm(AcrylicWindow, Ui_Form):
                 self.setting_win = None
             except Exception:
                 pass
-        self.setting_win = SettingWindow()
+        self.setting_win = SettingWindow(use_parent=self)
         self.setting_win.setting_signal.connect(self.setting_update)
         self.setting_win.show()
 
@@ -950,7 +954,7 @@ class MyForm(AcrylicWindow, Ui_Form):
                 self.city_win = None
             except Exception:
                 pass
-        self.city_win = CityWindow()
+        self.city_win = CityWindow(use_parent=self)
         self.city_win.show()
 
     # 打开记录界面

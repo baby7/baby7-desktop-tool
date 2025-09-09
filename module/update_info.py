@@ -120,13 +120,15 @@ def time_trigger_update(main_object, datetime_now_str):
 def check_v(main_object):
     now = datetime.datetime.now()
     if now > datetime.datetime(2025, 9, 22):
-        msg_box = QMessageBox()
+        msg_box = QMessageBox(main_object)
         msg_box.setWindowTitle("七仔的桌面工具")
         msg_box.setText("有新版本，优化了各项操作，增加了多种功能，强烈建议您前往下载！")
         # 设置背景色为白色，字体颜色为黑色
         msg_box.setStyleSheet(
             "QMessageBox { background-color: white; }"
             "QLabel { color: black; }"
+            "QPushButton { border-radius: 10px; border: 1px groove black; padding: 5px; }"
+            "QPushButton:hover { border: 1px groove blue; }"
         )
         # 创建自定义中文按钮
         download_button = msg_box.addButton("前往下载", QMessageBox.RejectRole)

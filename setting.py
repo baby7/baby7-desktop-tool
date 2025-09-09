@@ -13,12 +13,13 @@ class SettingWindow(AcrylicWindow, Ui_Form):
 
     setting_signal = Signal(str)
 
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, use_parent=None):
         super(SettingWindow, self).__init__(parent=parent)
 
         self.setupUi(self)
         self.setWindowFlag(QtCore.Qt.Tool)
 
+        self.use_parent = use_parent
         # 设置标题栏
         self.setWindowTitle("七仔的桌面工具 - 喝水设置")
         self.titleBar.minBtn.close()
@@ -52,13 +53,15 @@ class SettingWindow(AcrylicWindow, Ui_Form):
         self.box_info("成功", "喝水设置成功")
 
     def box_info(self, title, message):
-        msg_box = QMessageBox()
+        msg_box = QMessageBox(self.use_parent)
         msg_box.setWindowTitle(title)
         msg_box.setText(message)
         # 设置背景色为白色，字体颜色为黑色
         msg_box.setStyleSheet(
             "QMessageBox { background-color: white; }"
             "QLabel { color: black; }"
+            "QPushButton { border-radius: 10px; border: 1px groove black; padding: 5px; }"
+            "QPushButton:hover { border: 1px groove blue; }"
         )
         # 创建自定义中文按钮
         ok_button = msg_box.addButton("确认", QMessageBox.RejectRole)
