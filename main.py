@@ -58,8 +58,8 @@ from get_info import get_micro_blog_info, get_tophub_blog_info
 
 """
 生成exe的命令：
-pyinstaller -F -w -i img/icon/icon.ico -n 七仔的桌面工具V2.6.0 main.py
-pyinstaller -F -i img/icon/icon.ico -n 七仔的桌面工具V2.6.0 main.py
+pyinstaller -F -w -i img/icon/icon.ico -n 七仔的桌面工具V2.6.1 main.py
+pyinstaller -F -i img/icon/icon.ico -n 七仔的桌面工具V2.6.1 main.py
 或使用nuitka
 nuitka --mingw64 --onefile --standalone --windows-console-mode=disable --enable-plugin=pyside2 --include-package=win32com --include-package=pywintypes --windows-icon-from-ico=img/icon/icon.ico --output-dir=out --windows-uac-admin --lto=yes --jobs=14 --show-progress --show-memory main.py
 """
@@ -67,7 +67,7 @@ nuitka --mingw64 --onefile --standalone --windows-console-mode=disable --enable-
 
 class MyForm(AcrylicWindow, Ui_Form):
 
-    app_name = "七仔的桌面工具V2.6.0"              # 应用标题
+    app_name = "七仔的桌面工具V2.6.1"              # 应用标题
     tray_icon = None                            # 图标
     timer = None                                # 时间
     web_view = None                             # 浏览器
@@ -1006,7 +1006,7 @@ class MyForm(AcrylicWindow, Ui_Form):
             self.showNormal()  # 避免使用Win32 API
         except Exception as e:
             print("快捷键进入退出动画失败,错误信息:{}".format(e))
-        if self.show_form:
+        if not int(self.x()) == int(self.desktop_width):
             resolution_util.out_animation(self)
         else:
             resolution_util.in_animation(self)
@@ -1052,7 +1052,7 @@ class MyForm(AcrylicWindow, Ui_Form):
             self.showNormal()  # 避免使用Win32 API
         except Exception as e:
             print("快捷键进入退出动画失败,错误信息:{}".format(e))
-        if self.show_form:
+        if not int(self.x()) == int(self.desktop_width):
             resolution_util.out_animation(self)
         else:
             resolution_util.in_animation(self)

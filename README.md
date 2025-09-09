@@ -1,6 +1,7 @@
  > # 七仔的桌面工具
 
 ### 介绍
+
 桌面侧边栏工具，包含多种小卡片和工具，点击托盘区图标或快捷键Alt+1进行弹出和隐藏
 
 #### 上半部分是小卡片
@@ -34,16 +35,16 @@
 
 ![https://media.baby7blog.com/baby7-desktop-tool/baby7-desktop-tool-cut-image.png](https://media.baby7blog.com/baby7-desktop-tool/baby7-desktop-tool-cut-image.png)
 
-### 下载
-
-#### 百度云
-
-链接: [https://pan.baidu.com/s/13ATg6KWbdKChrJeZVXpqFQ?pwd=hksx](https://pan.baidu.com/s/13ATg6KWbdKChrJeZVXpqFQ?pwd=hksx)
-
-提取码: hksx
+### 下载(v2.6.1)
 
 #### 蓝奏云
 
-链接: [https://wwqs.lanzoue.com/iYGEc35pcq3a](https://wwqs.lanzoue.com/iYGEc35pcq3a)
+链接: [https://wwqs.lanzoue.com/in9bQ35qnv1a](https://wwqs.lanzoue.com/in9bQ35qnv1a)
 
-提取码: dhud
+提取码: fykt
+
+#### 百度云
+
+链接: [https://pan.baidu.com/s/1OOA8lfV2WUx8KZt23n2pBA?pwd=psrh](https://pan.baidu.com/s/1OOA8lfV2WUx8KZt23n2pBA?pwd=psrh)
+
+提取码: psrh
