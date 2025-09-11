@@ -48,3 +48,7 @@
 链接: [https://pan.baidu.com/s/1OOA8lfV2WUx8KZt23n2pBA?pwd=psrh](https://pan.baidu.com/s/1OOA8lfV2WUx8KZt23n2pBA?pwd=psrh)
 
 提取码: psrh
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=baby7/baby7-desktop-tool&type=Date)](https://www.star-history.com/#baby7/baby7-desktop-tool&Date)
