@@ -2,52 +2,51 @@
 
 ### 介绍
 
-桌面侧边栏工具，包含多种小卡片和工具，点击托盘区图标或快捷键Alt+1进行弹出和隐藏
+Windows桌面端软件，摸鱼办公神器
 
-#### 上半部分是小卡片
+拥有多种卡片自定义布局，隐藏到侧边需要使用时弹出(可以鼠标或快捷键唤出)
 
-* 日期卡片
-* 时间卡片
-* 天气卡片
-* 工作日卡片
-* 喝水记录卡片
+#### 主卡片
+* 本地文件快捷搜索（基于everything）
+* 快捷键截图、屏幕取色
+* 翻译（同时接入截图识别并翻译）
+* AI对话（多种智能体）
+* TODO（待办事项）功能
+* 各大平台实时热搜
+* 音乐播放器、小说阅读器
+* 有趣图文（摸鱼人日历、kfc梗图文案、萌宠图片、历史上的今天、随机心语）
+* 热门网站链接聚合
 
-#### 下半部分是工具
+#### 小卡片
+* Epic Steam 喜加一资讯
+* Bilibili粉丝量
+* 自定义快捷方式（网址、exe文件、文件夹或普通文件）
+* LCD时钟、日历、天气预报
+* 喝水记录、今天吃什么、电子木鱼
+* 倒数日、圆盘时钟、英语单词
+* 自定义图片、工作日、电脑监控
+* 灵感提示词、时间进度条、搜索
+* 古诗词、答案之书、一言
 
-* 各平台热搜
-* 待办事项（区分待办和完成分类，新增待办事项[标题、内容、程度、闹钟]）
-* 看的（必应每日一图、摸鱼人日历等）
-* 读的（历史上的今天、其他心语等）
-* 秒读
-
-
-### 说明
-
-可以将托盘区小图标拖到任务栏，然后点击小图标可以隐藏和弹出
-
-使用快捷键Alt+1可以隐藏和展示
-
-在托盘区右键可以弹出操作菜单
-
-暂时有部分接口失效，可以先修改源代码自行调整接口或等待我这边修复
+#### 工具箱模块
+* 文件批量操作工具、屏幕取色工具
+* Json格式化工具、编解码工具、颜色转换器
+* 时间 时区 时间戳的计算器
+* 图片批量转表格工具
+* 视频进度条生成器、笔记本电池健康曲线
+* 这班值不值得上、记仇生成器
+* 中国房贷计算器、中国家庭称谓计算器
+* BMI计算器
 
 ### 运行截图
 
-![https://media.baby7blog.com/baby7-desktop-tool/baby7-desktop-tool-cut-image.png](https://media.baby7blog.com/baby7-desktop-tool/baby7-desktop-tool-cut-image.png)
+![https://index.agiletiles.com/website/images/screenshot/screenshot-20250922.png](https://index.agiletiles.com/website/images/screenshot/screenshot-20250922.png)
 
-### 下载(v2.6.1)
+### 下载
 
 #### 蓝奏云
 
-链接: [https://wwqs.lanzoue.com/in9bQ35qnv1a](https://wwqs.lanzoue.com/in9bQ35qnv1a)
-
-提取码: fykt
-
-#### 百度云
-
-链接: [https://pan.baidu.com/s/1OOA8lfV2WUx8KZt23n2pBA?pwd=psrh](https://pan.baidu.com/s/1OOA8lfV2WUx8KZt23n2pBA?pwd=psrh)
-
-提取码: psrh
+链接: [https://agiletiles.lanzoue.com/iaeGk36p15ij](https://agiletiles.lanzoue.com/iaeGk36p15ij)
 
 ## Star History
 
