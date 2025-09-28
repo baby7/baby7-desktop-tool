@@ -38,9 +38,9 @@ Windows桌面端软件，摸鱼办公神器
 * 中国房贷计算器、中国家庭称谓计算器
 * BMI计算器
 
-### 运行截图
+### 运行展示（双主题）
 
-![https://index.agiletiles.com/website/images/screenshot/screenshot-20250922.png](https://index.agiletiles.com/website/images/screenshot/screenshot-20250922.png)
+![https://index.agiletiles.com/website/images/screenshot/screenshot-music-theme.png](https://index.agiletiles.com/website/images/screenshot/screenshot-music-theme.png)
 
 ## Star History
 
