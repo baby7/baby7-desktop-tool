@@ -42,12 +42,12 @@ Windows桌面端软件，摸鱼办公神器
 
 ![https://index.agiletiles.com/website/images/screenshot/screenshot-20250922.png](https://index.agiletiles.com/website/images/screenshot/screenshot-20250922.png)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=baby7/baby7-desktop-tool&type=Date)](https://www.star-history.com/#baby7/baby7-desktop-tool&Date)
+
 ### 下载
 
 #### 蓝奏云
 
-链接: [https://agiletiles.lanzoue.com/iaeGk36p15ij](https://agiletiles.lanzoue.com/iaeGk36p15ij)
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=baby7/baby7-desktop-tool&type=Date)](https://www.star-history.com/#baby7/baby7-desktop-tool&Date)
+链接: [https://agiletiles.lanzoue.com/iJNmp374gt5a](https://agiletiles.lanzoue.com/iJNmp374gt5a)
