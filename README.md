@@ -50,4 +50,4 @@ Windows桌面端软件，摸鱼办公神器
 
 #### 蓝奏云
 
-链接: [https://agiletiles.lanzoue.com/iJNmp374gt5a](https://agiletiles.lanzoue.com/iJNmp374gt5a)
+链接: [https://agiletiles.lanzoue.com/s/agiletiles](https://agiletiles.lanzoue.com/s/agiletiles)
