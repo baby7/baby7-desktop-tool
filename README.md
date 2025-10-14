@@ -1,6 +1,6 @@
 > # 七仔的桌面工具
 
-### 该版本Github已经停止更新，重置版Github请点击下方链接访问
+### 该版本暂停更新，【新版本Github】请点击下方链接访问
 
 [https://github.com/baby7/agile-tiles](https://github.com/baby7/agile-tiles)
 
